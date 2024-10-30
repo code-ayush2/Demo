@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Tahmid Ahmed</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #111;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff0057;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        .subscribe {
+            background-color: #ff0057;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h2 {
+            font-size: 48px;
+            color: #ff0057;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+        .email-form input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .email-form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff0057;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .about img {
+            width: 300px;
+            border-radius: 245px;
+        }
+        .about h2 {
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .about p {
+            color: #aaa;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .about .letstalk {
+            background-color: #ff0057;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        /* Services Section */
+        .services {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .services h2 {
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .services .service-box {
+            display: inline-block;
+            width: 300px;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .services .service-box h3 {
+            color: #ff0057;
+            margin-bottom: 10px;
+        }
+        .services .service-box p {
+            color: #aaa;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .services .service-box .read-more {
+            display: inline-block;
+            background-color: #ff0057;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .yu{
+            color: rgb(232, 215, 215);
+        }
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            margin-top: 50px;
+        }
+        .footer p {
+            color: #aaa;
+        }
+        .footer .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header container">
+        <h1 class="logo">Portfolio</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <button class="subscribe">Subscribe</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Hello, my name is <span class="yu">Ayush Sharma</span></h2>
+        <p>I'm a Web Developer.</p>
+        <form class="email-form">
+            <input type="email" placeholder="Enter Your Email">
+            <button type="submit">Let's Start</button>
+        </form>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about container">
+        <img src="ayush.jpg" alt="Profile Image">
+        <div>
+            <h2>About Me</h2>
+            <p>Developer & Designer: I am a front-end web developer. I provide clean code and pixel-perfect design. I make the website more interactive with web animations. A responsive design makes your website accessible to all users, regardless of their device.</p>
+            <button class="letstalk">Let's Talk</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-box">
+            <h3>Web Development</h3>
+            <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="service-box">
+            <h3>UI/UX Design</h3>
+            <p>Our designs are intuitive and user-centered to provide the best user experience.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="service-box">
+            <h3>Responsive Design</h3>
+            <p>Your website will be responsive and adapt to different screen sizes for a seamless experience.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>For more HTML, CSS, and coding tutorials, please click on the link below to subscribe to my channel.</p>
+        <div class="social-icons">
+            <a href="#">&#xf09a;</a> <!-- Facebook icon -->
+            <a href="#">&#xf099;</a> <!-- Twitter icon -->
+            <a href="#">&#xf16d;</a> <!-- Instagram icon -->
+        </div>
+        <p>&copy; 2023 Tahmid Ahmed</p>
+    </footer>
+
+</body>
+</html>
