@@ -171,6 +171,66 @@
             margin: 0 10px;
             text-decoration: none;
         }
+        /* Responsive Design */
+@media (max-width: 768px) {
+    /* General Adjustments */
+    .container {
+        padding: 10px;
+    }
+
+    /* Header */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .subscribe {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    /* Hero Section */
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .email-form input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .email-form button {
+        width: 100%;
+    }
+
+    /* About Section */
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about img {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    /* Services Section */
+    .services .service-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Footer */
+    .footer p {
+        font-size: 0.9rem;
+    }
+}
+
     </style>
 </head>
 <body>
